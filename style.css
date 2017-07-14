@@ -11,36 +11,11 @@
  License URI: LICENSE
  Text Domain: wp-bootstrap-starter
  Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+ * NB is addition to style.css of parent.
 */
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-# Woocommerce
-# Footer
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+header#masthead {
+    box-shadow: none;
+}
 
 div#page-sub-header {
 	position: relative;
@@ -58,12 +33,15 @@ div#page-sub-header {
 width: 100%;
 }
 footer#colophon {
-    background: #ddd none repeat scroll 0 0;
+    background: none;
     color: #99979c;
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
 }
-
+footer#colophon .container {
+    background: #ddd none repeat scroll 0 0;
+    padding: 20px 0;
+}
 
 
 
