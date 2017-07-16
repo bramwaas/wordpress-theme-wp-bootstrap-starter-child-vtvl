@@ -1,0 +1,433 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Bootstrap Starter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-15 10:54+0000\n"
+"PO-Revision-Date: 2017-07-15 11:55+0000\n"
+"Last-Translator: Bram Waasdorp <bramwaas@waasdorpsoekhan.nl>\n"
+"Language-Team: Dutch\n"
+"Language: nl-NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the template
+msgid "Blank without Container"
+msgstr "Leeg zonder container"
+
+#: footer.php:23
+msgid "Wordpress Bootstrap"
+msgstr "Wordpress Bootstrap"
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Primair"
+
+#: functions.php:98
+msgid "Sidebar"
+msgstr "Zijbalk (rechts)"
+
+#: functions.php:100 functions.php:109 functions.php:118 functions.php:127
+msgid "Add widgets here."
+msgstr "Voeg hier widgets toe"
+
+#: functions.php:107
+msgid "Footer 1"
+msgstr "Foeter 1"
+
+#: functions.php:116
+msgid "Footer 2"
+msgstr "Footer 2"
+
+#: functions.php:125
+msgid "Footer 3"
+msgstr "Footer 3"
+
+#: functions.php:172
+msgid "To view this protected post, enter the password below:"
+msgstr ""
+"Om dit beveiligde bericht te bekijken, voer het wachtwoord hieronder in:"
+
+#: functions.php:173
+msgid "Password:"
+msgstr "Wachtwoord:"
+
+#: functions.php:173
+msgid "Submit"
+msgstr "Verstuur"
+
+#. Name of the template
+msgid "Left Sidebar"
+msgstr "Linker zijbalk"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Meteen naar de inhoud"
+
+#: header.php:77
+msgid ""
+"Customize the contents of this sub-header and other elements of your site - "
+"go to Dashboard > Appearance > Customize"
+msgstr ""
+"Pas de inhoud van deze subkop en andere elementen van uw site aan - ga naar  "
+"Dashboard> Weergave > Customizer"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Zoek Resultaten voor: %s"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Pagina is niet gevonden."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Er is niets op deze locatie te vinden. Probeer misschien een van de "
+"onderstaande links of een zoekopdracht?"
+
+#: searchform.php:3
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Zoeken &hellip;"
+
+#: searchform.php:3
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:5
+msgctxt "submit button"
+msgid "Search"
+msgstr "Zoeken"
+
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Een gedachte over &ldquo;%s&rdquo;"
+
+#. 1: number of comments, 2: post title
+#: comments.php:38
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s gedachte over &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s gedachtes over &ldquo;%2$s&rdquo;"
+
+#: comments.php:55 comments.php:73
+msgid "Comment navigation"
+msgstr "Commentaar navigatie"
+
+#: comments.php:58 comments.php:76
+msgid "Older Comments"
+msgstr "Oudere reacties"
+
+#: comments.php:59 comments.php:77
+msgid "Newer Comments"
+msgstr "Nieuwere reacties"
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr "Er kan niet meer gereageerd worden."
+
+#: comments.php:97
+msgid "Leave a Reply"
+msgstr "Plaats een reactie"
+
+#: comments.php:98
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Plaats een reactie op  %s"
+
+#: comments.php:99
+msgid "Cancel Reply"
+msgstr "Annuleer reactie"
+
+#: comments.php:100
+msgid "Post Comment"
+msgstr "Plaats een reactie"
+
+#: comments.php:105
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+"Je kan deze <abbr title=\"HyperText Markup Language\">HTML</abbr> tags en "
+"attributen gebruiken:"
+
+#. Name of the template
+msgid "Blank with Container"
+msgstr "Leeg met container"
+
+#. Name of the template
+msgid "Full Width"
+msgstr "Volle breedte"
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Geplaatst op %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "door %s"
+
+#. %s: post title
+#: inc/template-tags.php:42
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Plaats een reactie <span class=\"screen-reader-text\"> op %s</span>"
+
+#. used between list items, there is a space after the comma
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:57 inc/template-tags.php:63
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Geplaatst in %1$s"
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Getagged %1$s"
+
+#. %s: Name of current post
+#. %s: Name of current post
+#: inc/template-tags.php:73 template-parts/content-page.php:39
+#, php-format
+msgid "Edit %s"
+msgstr "Bewerk %s"
+
+#: inc/template-tags.php:139
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:139
+msgid "Edit"
+msgstr "Bewerk"
+
+#: inc/template-tags.php:154
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">zegt:</span>"
+
+#: inc/template-tags.php:158
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s op %2$s"
+
+#: inc/template-tags.php:161
+msgid ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Edit"
+msgstr ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Bewerk"
+
+#: inc/template-tags.php:166
+msgid "Your comment is awaiting moderation."
+msgstr "Je reactie moet nog beoordeeld worden."
+
+#: inc/customizer.php:16
+msgid "Header Content"
+msgstr "Inhoud Kop (header)"
+
+#: inc/customizer.php:22
+msgid "WP Bootstrap Framework"
+msgstr "WP Bootstrap Framework"
+
+#: inc/customizer.php:26
+msgid "Banner Title"
+msgstr "Banner titel"
+
+#: inc/customizer.php:32
+msgid ""
+"A versatile and responsive Bootstrap WordPress starter theme for developers "
+"based on Twitter Botstrap."
+msgstr ""
+"Een veelzijdig en responsief Bootstrap WordPress start-thema voor "
+"ontwikkelaars op basis van Twitter Bootstrap."
+
+#: inc/customizer.php:36
+msgid "Banner Tagline"
+msgstr "Banner tag regel"
+
+#: inc/customizer.php:48
+msgid "Header"
+msgstr "Kop"
+
+#: inc/customizer.php:49
+msgid "Description of what this panel does."
+msgstr "Beschrijving van wat dit paneel doet."
+
+#: inc/customizer.php:56 inc/customizer.php:65
+msgid "Header Image"
+msgstr "Kop afbeelding"
+
+#: inc/customizer.php:57
+msgid "This is a section for the slider images."
+msgstr "Dit is een sectie voor de slider afbeeldingen."
+
+#: inc/customizer.php:84
+msgid "Upload Logo (replaces text)"
+msgstr "Upload Logo (in plaats van tekst)"
+
+#: template-parts/content-page.php:27 template-parts/content.php:40
+#: template-parts/content-notitle.php:18
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: template-parts/content.php:36
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lees verder <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klaar om je eerste bericht te publiceren? <a href=\"%1$s\">Begin hier</a>."
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, niets gevonden bij je zoektermen. Probeer het met een aantal andere "
+"zoekwoorden."
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"We hebben niet gevonden waar u naar op zoek bent. Misschien kan zoeken "
+"helpen."
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:78
+msgid "Product"
+msgstr "Product"
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:96
+msgid "Price"
+msgstr "Prijs"
+
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:102
+msgid "Quantity"
+msgstr "Hoeveelheid"
+
+#: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:119
+msgid "Total"
+msgstr "Totaal"
+
+#: woocommerce/cart/cart.php:59
+msgid "Remove this item"
+msgstr "Verwijder dit item"
+
+#: woocommerce/cart/cart.php:91
+msgid "Available on backorder"
+msgstr "Available on backorder"
+
+#: woocommerce/cart/cart.php:137
+msgid "Coupon:"
+msgstr "Coupon:"
+
+#: woocommerce/cart/cart.php:137 woocommerce/checkout/form-coupon.php:36
+msgid "Coupon code"
+msgstr "Coupon:"
+
+#: woocommerce/cart/cart.php:137 woocommerce/checkout/form-coupon.php:40
+msgid "Apply coupon"
+msgstr "Gebruik coupon"
+
+#: woocommerce/cart/cart.php:142
+msgid "Update cart"
+msgstr "Update cart"
+
+#: woocommerce/checkout/form-coupon.php:28
+msgid "Have a coupon?"
+msgstr "Have a coupon?"
+
+#: woocommerce/checkout/form-coupon.php:28
+msgid "Click here to enter your code"
+msgstr "Click here to enter your code"
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr "U moet ingelogd zijn om te kunnen afrekenen."
+
+#: woocommerce/checkout/form-checkout.php:55
+msgid "Your order"
+msgstr "Je order"
+
+#. Name of the theme
+msgid "WP Bootstrap Starter"
+msgstr "WP Bootstrap Starter"
+
+#. Description of the theme
+msgid ""
+"The best WordPress starter theme based on the most powerful frameworks in "
+"the world: \"_s\" (by Automattic, the main people behind WordPress "
+"development), Twitter Bootstrap (the most popular HTML, CSS, and JS "
+"framework for developing responsive, mobile first projects on the web) and "
+"Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for "
+"easy scalable vector graphics on websites). This theme, like WordPress, is "
+"licensed under the GPL. You can use this theme as base for your next "
+"WordPress theme project and you are allowed to remove the link at the footer "
+"or do whatever you want. Your feedback on how we can continuously improve "
+"this WordPress Starter Theme Bootstrap will be highly appreciated. Page "
+"templates includes Right-sidebar (default page template), Left-Sidebar, Full-"
+"Width, Blank with container, Blank without container Page. Other features - "
+"Currently using Bootstrap v4.0.0-alpha.6, Widgetized footer area, "
+"WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual "
+"Composer, Compatible with Elementor Page Builder. This theme will be an "
+"active project which we will update from time to time. Check this page "
+"regularly for the updates."
+msgstr ""
+"Het beste WordPress-startthema op basis van de meest krachtige raamwerken "
+"ter wereld: \"_s\" (door Automattic, de belangrijkste mensen achter "
+"WordPress-ontwikkeling), Twitter Bootstrap (het meest populaire HTML-, CSS- "
+"en JS-kader voor het ontwikkelen van responsieve, eerste mobiele projecten "
+"Op het web) en Font Awesome (of Fontawesome, een volledige suite van 675 + "
+"pictografische iconen voor makkelijke schaalbare vectorafbeeldingen op "
+"websites). Dit thema, zoals WordPress, is gelicenseerd onder de GPL. U kunt "
+"dit thema als basis gebruiken voor uw volgende WordPress-themaproject en u "
+"kunt de link op de footer verwijderen of doen wat u maar wilt. Uw feedback "
+"over hoe we deze WordPress Starter Theme Bootstrap continu kunnen verbeteren,"
+" worden zeer gewaardeerd. Pagina sjablonen bevatten Right-sidebar (standaard "
+"pagina sjabloon), Linker-zijbalk, Volledige breedte, Blanco met container, "
+"Blanco zonder container pagina. Andere functies - Momenteel met Bootstrap v4."
+"0.0-alpha.6, Widgetized footer gebied, WooCommerce klaar, Compatibel met "
+"Contactformulier 7, Compatibel met Visual Composer, Compatibel met Elementor "
+"Page Builder. Dit thema wordt een actief project dat we van tijd tot tijd "
+"zullen updaten. Controleer deze pagina regelmatig voor de updates."
+
+#. URI of the theme
+msgid "http://afterimagedesigns.com/wp-bootstrap-starter/"
+msgstr "http://afterimagedesigns.com/wp-bootstrap-starter/"
+
+#. Author of the theme
+msgid "Afterimage Designs"
+msgstr "Afterimage Designs"
+
+#. Author URI of the theme
+msgid "http://afterimagedesigns.com/"
+msgstr "http://afterimagedesigns.com/"
