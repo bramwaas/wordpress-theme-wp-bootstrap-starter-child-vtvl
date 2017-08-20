@@ -44,7 +44,13 @@ footer#colophon {
 footer#colophon .container {
     background: #ddd none repeat scroll 0 0;
     padding: 20px 0;
-}    
+} 
+#footer-widget .widget {
+	display: inline-block;
+        margin: 0;
+}
+
+   
  /*--------------------------------------------------------------
 	## Galleries (code uit parent v2.2.7)
 --------------------------------------------------------------*/

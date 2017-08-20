@@ -14,12 +14,9 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
-            <div class="site-info">
-<p>&copy; <?php esc_url(bloginfo('name')); ?> <?php echo date('Y');?></p>
-            </div><!-- close .site-info -->
+<?php get_template_part( 'footer-widget' ); ?>
 		</div>
 	</footer><!-- #colophon -->
 <?php endif; ?>
