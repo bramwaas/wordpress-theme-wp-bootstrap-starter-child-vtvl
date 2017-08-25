@@ -1,0 +1,5 @@
+$doc->addScriptDeclaration('jQuery(document).ready(function() {
+  jQuery(\'a[rel*="lightbox"], a[data-wsmodal]\').magnificPopup({
+type: \'image\'
+, closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
+});})');  
