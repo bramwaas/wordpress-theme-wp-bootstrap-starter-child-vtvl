@@ -21,25 +21,35 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-    wp_enqueue_style( 'child-style',
+    wp_enqueue_style( 'magnificpopup-style',
         get_stylesheet_directory_uri() . '/css/magnificpopup.css',
         array( 'child-style' ),
         wp_get_theme()->get('Version')
     );	
-   if ( ! wp_script_is( 'jquery', 'done' ) ) {
-     wp_enqueue_script( 'jquery' );
-   }
-    wp_enqueue_script( string $handle, 
+    wp_enqueue_script( 'magnificpopup-script', 
 	get_stylesheet_directory_uri() . '/js/MagnificPopupV1-1-a.js',
 	array( 'jquery' ), 
 	 wp_get_theme()->get('Version'), 
 	true );	
-   wp_add_inline_script( 'jquery-migrate', 'jQuery(document).ready(function(){
-     jQuery(\'a[rel*="lightbox"], a[data-wsmodal]\').magnificPopup({
-type: \'image\'
-, closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
-});
-   });' );
+   wp_add_inline_script( 'magnificpopup-script', 
+			'jQuery(document).ready(function(){
+     $(\'a[rel*="lightbox"], a[data-wsmodal], a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]\').each(function(){
+        if ($(this).parents(\'.gallery\').length == 0) {
+            $(this).magnificPopup({
+		type: \'image\'
+		, closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
+                });
+            }
+        });
+     $(\'.gallery\').each(function() {
+        $(this).magnificPopup({
+            delegate: \'a\',
+            type: \'image\',
+            gallery: {enabled: true}
+            });
+        });
+   ',
+			'after');
 	
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_child_vtvl_enqueue_styles' );
