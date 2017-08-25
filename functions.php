@@ -33,7 +33,7 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
 	true );	
    wp_add_inline_script( 'magnificpopup-script', 
 			'jQuery(document).ready(function(){
-     $(\'a[rel*="lightbox"], a[data-wsmodal], a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]\').each(function(){
+     jQuery(\'a[rel*="lightbox"], a[data-wsmodal], a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]\').each(function(){
         if ($(this).parents(\'.gallery\').length == 0) {
             $(this).magnificPopup({
 		type: \'image\'
@@ -41,7 +41,7 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
                 });
             }
         });
-     $(\'.gallery\').each(function() {
+     jQuery(\'.gallery\').each(function() {
         $(this).magnificPopup({
             delegate: \'a\',
             type: \'image\',
