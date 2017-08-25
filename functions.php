@@ -6,6 +6,10 @@
  *
  * @package WP_Bootstrap_Starter
  * 2017-07-16 vertaling toegevoegd ook voor parent theme
+ * 2017-08-25 magnificpopup toegevoegd
+ */
+/**
+ * Enqueue scripts and styles.
  */
 function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
 
@@ -17,8 +21,29 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/css/magnificpopup.css',
+        array( 'child-style' ),
+        wp_get_theme()->get('Version')
+    );	
+   if ( ! wp_script_is( 'jquery', 'done' ) ) {
+     wp_enqueue_script( 'jquery' );
+   }
+    wp_enqueue_script( string $handle, 
+	get_stylesheet_directory_uri() . '/js/MagnificPopupV1-1-a.js',
+	array( 'jquery' ), 
+	 wp_get_theme()->get('Version'), 
+	true );	
+   wp_add_inline_script( 'jquery-migrate', 'jQuery(document).ready(function(){
+     jQuery(\'a[rel*="lightbox"], a[data-wsmodal]\').magnificPopup({
+type: \'image\'
+, closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
+});
+   });' );
+	
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_child_vtvl_enqueue_styles' );
+
 function wp_bootstrap_starter_child_vtvl_setup() {
     load_theme_textdomain( 'wp-bootstrap-starter', get_stylesheet_directory() . '/languages/wp-bootstrap-starter' );
     load_child_theme_textdomain( 'wp-bootstrap-starter-child-vtvl', get_stylesheet_directory() . '/languages' );
