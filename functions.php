@@ -16,14 +16,16 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
     $parent_style = 'wp-bootstrap-starter'; // 
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
+    wp_enqueue_style( 'wp-bootstrap-starter-style',  // naam vernaderd, omdat parent onder deze naam 'child-style'.css al ophaalt
+		                                     // met wp_enqueue_style( 'wp-bootstrap-starter-style', get_stylesheet_uri() );
+		                                     // (later in de lijst trouwens) aan versie is te zien welke gebruikt wordt.
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
     wp_enqueue_style( 'magnificpopup-style',
         get_stylesheet_directory_uri() . '/css/magnificpopup.css',
-        array( 'child-style' ),
+        array( 'wp-bootstrap-starter-style' ),
         wp_get_theme()->get('Version')
     );	
     wp_enqueue_script( 'magnificpopup-script', 
