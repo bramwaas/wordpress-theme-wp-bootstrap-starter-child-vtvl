@@ -30,29 +30,39 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
     );	
     wp_enqueue_script( 'magnificpopup-script', 
 	get_stylesheet_directory_uri() . '/js/MagnificPopupV1-1-a.js',
-	array( 'jquery' ), 
+	array(  'jquery'  ), 
 	 wp_get_theme()->get('Version'), 
 	true );	
+
    wp_add_inline_script( 'magnificpopup-script', 
-			'jQuery(document).ready(function(){
-     jQuery(\'a[rel*="lightbox"], a[data-wsmodal], a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]\').each(function(){
-        if ($(this).parents(\'.gallery\').length == 0) {
-            $(this).magnificPopup({
-		type: \'image\'
-		, closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
-                });
-            }
-        });
-     jQuery(\'.gallery\').each(function() {
-        $(this).magnificPopup({
-            delegate: \'a\',
-            type: \'image\',
-            gallery: {enabled: true}
-            });
-        });
-   ',
+'jQuery(document).ready(function(){
+	jQuery(\'a[rel*="lightbox"], a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]\').each(function(){
+       	  if (jQuery(this).parents(\'.gallery\').length == 0) {
+               	jQuery(this).magnificPopup({
+			type: \'image\',
+			image: {titleSrc: function(item) {
+				return item.el.find(\'img\').attr(\'alt\');}
+			},
+			closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
+		});
+	  }
+	}); 
+	jQuery(\'.gallery\').each(function() {
+        	jQuery(this).magnificPopup({
+            		delegate: \'a\',
+            		gallery: {enabled: true},
+            		type: \'image\',
+			image: {titleSrc: function(item) {
+				return item.el.parents(\'.gallery-item\').find(\'.gallery-caption\').text();}
+			},
+			closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
+		});
+	});
+});'
+,
 			'after');
 	
+
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_child_vtvl_enqueue_styles' );
 
@@ -65,7 +75,7 @@ add_action( 'after_setup_theme', 'wp_bootstrap_starter_child_vtvl_setup' );
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
+ */http://192.168.199.140/1234567890/wpxxvtl/wp-content/uploads/2017/06/thumb_IMG_3394_1024.jpg
 function wp_bootstrap_starter_child_widgets_init() {
 	unregister_sidebar( 'footer-1' );
 	unregister_sidebar( 'footer-2' );
