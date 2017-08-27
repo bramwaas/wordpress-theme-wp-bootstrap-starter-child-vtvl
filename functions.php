@@ -7,6 +7,7 @@
  * @package WP_Bootstrap_Starter
  * 2017-07-16 vertaling toegevoegd ook voor parent theme
  * 2017-08-25 magnificpopup toegevoegd
+ * 2017-08-27 workaround via css voor MP verticalFit in gallery daarom in aanroep false.
  */
 /**
  * Enqueue scripts and styles.
@@ -40,7 +41,8 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
        	  if (jQuery(this).parents(\'.gallery\').length == 0) {
                	jQuery(this).magnificPopup({
 			type: \'image\',
-			image: {titleSrc: function(item) {
+			image: {verticalFit: true,
+				titleSrc: function(item) {
 				return item.el.find(\'img\').attr(\'alt\');}
 			},
 			closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
@@ -52,7 +54,9 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
             		delegate: \'a\',
             		gallery: {enabled: true},
             		type: \'image\',
-			image: {titleSrc: function(item) {
+			image: {
+				verticalFit: false, /* workaround in css omdat verticalFit in gallery niet helemaal goed werkt */ 
+				titleSrc: function(item) {
 				return item.el.parents(\'.gallery-item\').find(\'.gallery-caption\').text();}
 			},
 			closeMarkup : \'<button title="%title%" type="button" class="mfp-close">&nbsp;</button>\'
