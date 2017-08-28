@@ -405,7 +405,7 @@ padding:10px 10px;
 background: white;
 border-radius: 3px;
 box-shadow: @mfp-img-box-shadow; 
-max-height: calc(100vh - 48px); /* work-around voor niet (goed) werken verticalFit in gallery */
+max-height: calc(~"100vh -"  2 * @mfp-img-margintopbottom); /* work-around voor niet (goed) werken verticalFit in gallery */
 }
 div.mfp-iframe-scaler button.mfp-close
 {
