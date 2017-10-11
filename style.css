@@ -5,7 +5,7 @@
  Author:       Bram Waasdorp
  Author URI:   http://www.waasdorpsoekhan.nl
  Template:     wp-bootstrap-starter
- Version:      1.0.1
+ Version:      1.0.2
  * @copyright  Copyright (C) 2017 - 2017 AHC Waasdorp. All rights reserved.
  License: GNU General Public License v2 or later
  License URI: LICENSE
@@ -15,6 +15,7 @@
  * 2017-7-16 fout in parent mbt galleries ontstaan na versie 2.2.7 
  * (volgorde .gallery-columns-3 .gallery-item omgewisseld ) 
  * verbeterd door code uit 2.2.7 hier binnen te halen
+ * 2017-10-11 code voor social media pictogrammen toegevoegd
 */
 header#masthead {
     box-shadow: none;
@@ -119,7 +120,7 @@ footer#colophon .container {
         display: block;
 }
  /*--------------------------------------------------------------
-	## icons social media link (facebook instagram)
+	## icons social media link (facebook instagram youtube)
 --------------------------------------------------------------*/
 
 img.sml_icon {
@@ -139,6 +140,34 @@ img.sml_icon {
 img.sml_icon:hover {
 	opacity:1;
 }
+.vtlicon{position:relative;
+display:inline-block;
+background:url(./images/vtl-icons-socmed-sprite.png) 0 0;
+width:32px;
+height:32px;
+margin-top:2px;
+margin-right:2px;
+opacity:0.65;
+transition: all ease .3s;
+-webkit-transition: all ease .3s;
+-moz-transition: all ease .3s;
+-ms-transition: all ease .3s;
+-o-transition: all ease .3s;
+}
+.vtlicon:hover {
+opacity:1;
+}
+.vtlicon-fb-blue{background-position:0 0;}
+.vtlicon-fb-white{background-position:0 -32px;}
+.vtlicon-insta-app{background-position:-32px 0;}
+.vtlicon-insta-black{background-position:-32px -32px;}
+.vtlicon-insta-white{background-position:-32px -64px;}
+.vtlicon-yt{background-position:-64px 0;}
+.vtlicon-yt-stacked{background-position:-64px -32px;}
+.vtlicon-twitter-blue{background-position:-96px 0;}
+.vtlicon-twitter-white{background-position:-96px -32px;}
+.vtlicon-twitter-whonbl{background-position:-96px -64px;}
+.vtlicont a{color:transparent;}
 
 
 
