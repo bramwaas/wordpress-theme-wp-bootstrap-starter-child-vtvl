@@ -8,7 +8,8 @@
  *
  * @package WP_Bootstrap_Starter
  * BW 2017-07-01: Condition is_home removed from page-subheader.
- * 20170807 basurl toegevoegd.
+ * 20170807 baseurl toegevoegd.
+ * 20171013 Link naar home op header image
  */
 
 ?><!DOCTYPE html>
@@ -35,7 +36,7 @@
                 </button>
                 <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
-                        <a href="<?php echo esc_url( home_url( '/' )); ?>">
+                        <a title="<?php esc_html_e( 'Home', 'wp-bootstrap-starter' ); ?>" href="<?php echo esc_url( home_url( '/' )); ?>">
                             <img src="<?php echo get_theme_mod( 'wp_bootstrap_starter_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
@@ -63,7 +64,9 @@
     <div id="page-sub-header" class="content-area col-sm-12 col-md-12 col-lg-12 col-12">
         <div class="container">
 	<?php if(has_header_image() ): ?>
+			<a title="<?php esc_html_e( 'Home', 'wp-bootstrap-starter' ); ?>" href="<?php echo esc_url( home_url( '/' )); ?>">
             <img id="page-sub-header-img" src="<?php echo header_image(); ?>" alt="<?php esc_url(bloginfo('name')); ?>"  class="img-fluid">
+			</a>
         <?php else : ?>
             <h1><?php esc_url(bloginfo('name')); ?></h1>
             <p><?php bloginfo( 'description'); ?></p>
