@@ -65,16 +65,65 @@ function wp_bootstrap_starter_child_vtvl_enqueue_styles() {
 });'
 ,
 			'after');
-	
+   
+wp_enqueue_script( 'google-analytics-script',
+		"https://www.googletagmanager.com/gtag/js?id=" . get_theme_mod( 'ga_tracking_id_setting', '' ),
+		array(),
+		null, //wp_get_theme()->get('Version'),
+		true );
+wp_add_inline_script( 'google-analytics-script',
+		
+		"  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '" . get_theme_mod( 'ga_tracking_id_setting', '' ). "');",
+		'after');
+
 
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_child_vtvl_enqueue_styles' );
+
+function wp_bootstrap_starter_child_customize_register( $wp_customize ) {
+	
+	
+	
+	//Google Analytics
+	
+	$wp_customize->add_section(
+			'google-analytics',
+			array(
+					'title' => __( 'Google Analytics', 'wp-bootstrap-starter-child' ),
+					//'description' => __( 'This is a section for the google analytics UA', 'wp-bootstrap-starter-child' ),
+					'description' => __( 'Add Google Analytics Tracking-ID here eg: UA-7124553-9' ),
+					'panel' => '', // Not typically needed.
+					'priority' => 180,
+					'capability' => 'edit_theme_options',
+					'theme_supports' => '', // Rarely needed.
+			)
+			);
+	
+	$wp_customize->add_setting( 'ga_tracking_id_setting', array(
+			'type' => 'theme_mod',
+			'default' => __( '', 'wp-bootstrap-starter-child' ),
+			'sanitize_callback' => 'wp_filter_nohtml_kses',
+	) );
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, 'google_analyics_setting', array(
+			'label' => __( 'Google Analytics Tracking-ID', 'wp-bootstrap-starter-child' ),
+			'section'    => 'google-analytics',
+			'settings'   => 'ga_tracking_id_setting',
+			'type' => 'text'
+	) ) );
+}
+add_action( 'customize_register', 'wp_bootstrap_starter_child_customize_register' );
 
 function wp_bootstrap_starter_child_vtvl_setup() {
     load_theme_textdomain( 'wp-bootstrap-starter', get_stylesheet_directory() . '/languages/wp-bootstrap-starter' );
     load_child_theme_textdomain( 'wp-bootstrap-starter-child-vtvl', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'wp_bootstrap_starter_child_vtvl_setup' );
+
+
 /**
  * Register widget area.
  *
