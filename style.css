@@ -5,7 +5,7 @@
  Author:       Bram Waasdorp
  Author URI:   http://www.waasdorpsoekhan.nl
  Template:     wp-bootstrap-starter
- Version:      1.0.2
+ Version:      1.0.3
  * @copyright  Copyright (C) 2017 - 2017 AHC Waasdorp. All rights reserved.
  License: GNU General Public License v2 or later
  License URI: LICENSE
@@ -16,6 +16,7 @@
  * (volgorde .gallery-columns-3 .gallery-item omgewisseld ) 
  * verbeterd door code uit 2.2.7 hier binnen te halen
  * 2017-10-11 code voor social media pictogrammen toegevoegd
+ * 2017-10-21 code voor social media wat aangepast
 */
 header#masthead {
     box-shadow: none;
@@ -38,13 +39,13 @@ width: 100%;
 }
 footer#colophon {
     background: none;
-    color: #99979c;
+    color: #fff;
     padding: 0;
     text-align: center;
 }
 footer#colophon .container {
     background: #ddd none repeat scroll 0 0;
-    padding: 20px 0;
+    padding: 30px 0;
 } 
 #footer-widget .widget {
 	display: inline-block;
@@ -71,11 +72,10 @@ footer#colophon .container {
 }
 .gallery-item  img {
 	margin: 0 5px 5px 0;
-	box-shadow: 4px 4px 6px 2px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 2px 2px #aaa;
 	border-radius: 5px;
 	max-width: calc(100% - 10px);
 }
-
 	
 	
 }
@@ -148,7 +148,7 @@ width:32px;
 height:32px;
 margin-top:2px;
 margin-right:2px;
-opacity:0.65;
+opacity:0.5;
 transition: all ease .3s;
 -webkit-transition: all ease .3s;
 -moz-transition: all ease .3s;
@@ -158,16 +158,21 @@ transition: all ease .3s;
 .vtlicon:hover {
 opacity:1;
 }
-.vtlicon-fb-blue{background-position:0 0;}
-.vtlicon-fb-white{background-position:0 -32px;}
-.vtlicon-insta-app{background-position:-32px 0;}
+.vtlicon-fb-blue,
+.vtlicon-fb-to-cl:hover{background-position:0 0;}
+.vtlicon-insta-app,
+.vtlicon-insta-to-cl:hover{background-position:-32px 0;}
+.vtlicon-yt,
+.vtlicon-yt-to-cl:hover{background-position:-64px 0;}
+.vtlicon-twitter-blue,
+.vtlicon-twitter-to-cl:hover{background-position:-96px 0;}
 .vtlicon-insta-black{background-position:-32px -32px;}
+.vtlicon-twitter-whonbl{background-position:-96px -32px;}
+.vtlicon-yt-black{background-position:-64px -32px;}
+.vtlicon-fb-white{background-position:0 -64px;}
 .vtlicon-insta-white{background-position:-32px -64px;}
-.vtlicon-yt{background-position:-64px 0;}
-.vtlicon-yt-stacked{background-position:-64px -32px;}
-.vtlicon-twitter-blue{background-position:-96px 0;}
-.vtlicon-twitter-white{background-position:-96px -32px;}
-.vtlicon-twitter-whonbl{background-position:-96px -64px;}
+.vtlicon-yt-white{background-position:-64px -64px;}
+.vtlicon-twitter-white{background-position:-96px -64px;}
 .vtlicont a{color:transparent;}
 
 
