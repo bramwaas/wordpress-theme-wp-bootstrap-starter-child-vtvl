@@ -5,7 +5,7 @@
  Author:       Bram Waasdorp
  Author URI:   http://www.waasdorpsoekhan.nl
  Template:     wp-bootstrap-starter
- Version:      1.0.3
+ Version:      1.0.4
  * @copyright  Copyright (C) 2017 - 2017 AHC Waasdorp. All rights reserved.
  License: GNU General Public License v2 or later
  License URI: LICENSE
@@ -17,6 +17,7 @@
  * verbeterd door code uit 2.2.7 hier binnen te halen
  * 2017-10-11 code voor social media pictogrammen toegevoegd
  * 2017-10-21 code voor social media wat aangepast
+ * 2017-10-30 v1.0.4: header.php nav classes aangepast ivm update parent theme 2.5.4 Upgrade the bootstrap 4 alpha to bootstrap 4 beta
 */
 header#masthead {
     box-shadow: none;

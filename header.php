@@ -10,6 +10,10 @@
  * BW 2017-07-01: Condition is_home removed from page-subheader.
  * 20170807 baseurl toegevoegd.
  * 20171013 Link naar home op header image
+ * 20171030 nav classes aangepast ivm update parent theme 2.5.4 Upgrade the bootstrap 4 alpha to bootstrap 4 beta
+ * en css daarin (oude classes nog niet verwijderd):
+ *  navbar-toggleable-md   => navbar-expand-md 
+ *  nieuw aanvulling op navbar-light; bg-light
  */
 
 ?><!DOCTYPE html>
@@ -29,7 +33,7 @@
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top" role="banner">
         <div class="container">
-            <nav class="navbar navbar-toggleable-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-light">
 
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
