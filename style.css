@@ -5,8 +5,8 @@
  Author:       Bram Waasdorp
  Author URI:   http://www.waasdorpsoekhan.nl
  Template:     wp-bootstrap-starter
- Version:      1.0.5
- * @copyright  Copyright (C) 2017 - 2017 AHC Waasdorp. All rights reserved.
+ Version:      1.1.0.
+ * @copyright  Copyright (C) 2017 - 2019 AHC Waasdorp. All rights reserved.
  License: GNU General Public License v2 or later
  License URI: LICENSE
  Text Domain: wp-bootstrap-starter-child-vtl
@@ -19,13 +19,20 @@
  * 2017-10-21 code voor social media wat aangepast
  * 2017-10-30 v1.0.4: header.php nav classes aangepast ivm update parent theme 2.5.4 Upgrade the bootstrap 4 alpha to bootstrap 4 beta
  * 2017-12-02 v1.0.5: style van masthead en navbar brand aangepast ivm update parent them 3.0.4 
+ * 2019-01-11 v1.1.0: style van  diverse onderdelen masthead, navbar   aangepast ivm update parent them 3.1.0
 */
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
 header#masthead {
     box-shadow: none;
     background-color: transparent;
     padding: 0;
     border-bottom: none #212529;
 }
+
+
 #masthead .navbar-nav > li > a {
     color: #7f7f7f;
 }
@@ -34,6 +41,27 @@ header#masthead {
   /*background: #f9f9f9;*/
   font-weight: 500;
 }
+.navbar-light.bg-light
+{
+	background-color: transparent !important; 
+	    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+	    border: 1px solid rgba(0,0,0,.125);
+}
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+  color: #7f7f7f; /* v3.1.0 #cdbfe3; */
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
+  color: #292b2c; /* v3.1.0 #fff; */
+  font-weight: 600;
+  /*background: #f9f9f9;*/
+}
+.navbar-brand > a:visited,
 .navbar-brand > a {
     color: #7f7f7f; 
     font-size: 1rem;
@@ -54,8 +82,6 @@ header#masthead {
     background-color: #f8f9fa;
     font-weight: 500;
 }
-
-
 div#page-sub-header {
 	position: relative;
 	padding:  0;
@@ -64,13 +90,43 @@ div#page-sub-header {
 	text-shadow: 0 1px 0 rgba(0,0,0,.1);
 	background-color: transparent;
 	background-image: none;
-	font-size: 20px;
+	font-size: 20px;  /* defautl 1.25rem */
 	background-size: cover;
+}
+body:not(.theme-preset-active) #page-sub-header h1 { /* From theme v3.1.0 */
+  line-height: 1.6;
+  font-size: 4rem;
+  color: #563e7c;
+  margin: 0 0 1rem;
+  border: 0;
+  padding: 0;
+}
+#page-sub-header p { /* From v3.0.6 */
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #212529;
+}
+body:not(.theme-preset-active) #page-sub-header p { /* From v3.1.0 */
+color: #212529;
+}
+
+#page-sub-header p {
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #212529;
 }
 #page-sub-header-img
 {
 width: 100%;
 }
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
 footer#colophon {
     background: none;
     color: #fff;
@@ -208,7 +264,3 @@ opacity:1;
 .vtlicon-yt-white{background-position:-64px -64px;}
 .vtlicon-twitter-white{background-position:-96px -64px;}
 .vtlicont a{color:transparent;}
-
-
-
-
