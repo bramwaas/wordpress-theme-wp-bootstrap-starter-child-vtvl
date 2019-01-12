@@ -1,4 +1,5 @@
 === WP Bootstrap Starter child vtvl ===
+Child template for Volkstuin Vereniging Linnaeus
 
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
 Requires at least: 4.0
