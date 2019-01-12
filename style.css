@@ -19,7 +19,7 @@
  * 2017-10-21 code voor social media wat aangepast
  * 2017-10-30 v1.0.4: header.php nav classes aangepast ivm update parent theme 2.5.4 Upgrade the bootstrap 4 alpha to bootstrap 4 beta
  * 2017-12-02 v1.0.5: style van masthead en navbar brand aangepast ivm update parent them 3.0.4 
- * 2019-01-11 v1.1.0: style van  diverse onderdelen masthead, navbar   aangepast ivm update parent them 3.1.0
+ * 2019-01-11 Deprecated: Function create_function() is deprecated in style van  diverse onderdelen masthead, navbar   aangepast ivm update parent them 3.1.0
 */
 
 /*--------------------------------------------------------------
@@ -46,7 +46,7 @@ header#masthead {
 	background-color: transparent !important; 
 	    border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-	    border: 1px solid rgba(0,0,0,.125);
+	/*    border: 1px solid rgba(0,0,0,.125); */
 }
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
   color: #7f7f7f; /* v3.1.0 #cdbfe3; */
