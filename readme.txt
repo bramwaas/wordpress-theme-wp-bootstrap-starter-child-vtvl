@@ -1,11 +1,11 @@
-=== WP Bootstrap Starter child vtvl ===
-Child template for Volkstuin Vereniging Linnaeus
+=== WP Bootstrap Starter Child ===
+Child of WP Bootstrap Starter theme for Volkstuinvereniging Linnaeus
 
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
 Requires at least: 4.0
-Tested up to: 4.99
+Tested up to: 5.0
 
-Copyright (c) 2017 2019 by AHC Waasdorp (https://www.waasdorpsoekhan.nl/)
+Copyright (c) 2016 by Afterimage Designs (http://afterimagedesigns.com/)
 This Theme is distributed under the terms of the GNU GPL.
 
 License: GNU General Public License v2.0
@@ -18,8 +18,6 @@ WordPress Bootstrap Starter Theme or Bootstrap WordPress Starter Theme is based 
 * Twitter Bootstrap – the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated.
 
-This child theme has adaption to fit better to the needs of the Volkstuin Vereniging Linnaeus
-
 Page templates
 * Right-sidebar (default page template)
 * Left-Sidebar
@@ -29,7 +27,7 @@ Page templates
 
 
 Other features:
-* Currently using Bootstrap v4.0.0-alpha.6
+* Currently using Bootstrap v4.0.0
 * Widgetized footer area
 * WooCommerce ready
 * Compatible with Contact Form 7
@@ -37,7 +35,6 @@ Other features:
 * Compatible with Elementor Page Builder
 
 
-This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
 
 == Installation ==
 
@@ -60,9 +57,8 @@ WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
 * Font Awesome icons, Copyright (C) Dave Gandy License: SIL Open Font License, version 1.1. - http://fontawesome.io/
 
 == Changelog ==
-
 = v1.1.0 2019-01-11  =
- * several small style changes mainly in  masthead, navbar in response to update parent them 3.1.0 and to prepare to wp 5.0
+ * several small style changes mainly in  masthead, navbar in response to update parent theme 3.1.0 and tested in Wordpress 5.0.3
 
 = v1.0.5 2017-12-02  = 
  * style of masthead and navbar brand changed in response to update parent them 3.0.4 
@@ -74,3 +70,4 @@ WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
 * Initial release
 * 2017-7-16 solved error in parent concerning galleries after v2.2.7 
 * 2017-10-11 code for social media added
+
