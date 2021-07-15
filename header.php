@@ -12,9 +12,9 @@
  * 20171013 Link naar home op header image
  * 20171030 nav classes aangepast ivm update parent theme 2.5.4 Upgrade the bootstrap 4 alpha to bootstrap 4 beta
  * en css daarin (oude classes nog niet verwijderd):
- *  navbar-toggleable-md   => navbar-expand-md
+ *  navbar-toggleable-md   => navbar-expand-md 
  *  nieuw aanvulling op navbar-light; bg-light
- * 20210715 aantal dingen overgenomen uit standaard van eind 20202 en login poppetje fa
+ * 20210715 aantal dingen overgenomen uit standaard en login poppetje fa
  */
 
 ?><!DOCTYPE html>
@@ -76,15 +76,19 @@
                 ]);
                 ?>
                 <div class="navbar-item"  label="Login logout">
-					<?php if (is_user_logged_in()): ?>
-                    	<a class="nav-link" href="<?php echo wp_logout_url(); ?>"  title="<?php esc_attr_e('Logout', 'default' ); ?>" rel="home"> 
-                        	<i class="fas fa-user"></i>
-                    	</a>
-			        <?php else : ?>
-                    	<a class="nav-link" href="wp-login.php" title="<?php esc_attr_e('Login', 'default' ); ?>" rel="home"> 
-                        	<i class="far fa-user"></i>
-                    	</a>
-					<?php endif; ?>
+					<?php
+					global $wp;
+					$redirect_url = add_query_arg( $wp->query_vars, home_url( $wp->request ) );
+					if (is_user_logged_in()){
+                    	echo '<a class="nav-link" href="', wp_logout_url($redirect_url), '"  title="', esc_attr_e('Logout', 'default' ), '" rel="home">'; 
+                        echo '<i class="fas fa-user"></i>';
+                    	echo '</a>';
+			        } else {
+                    	echo '<a class="nav-link" href="', wp_login_url($redirect_url), '" title="', esc_attr_e('Login', 'default' ), '" rel="home">'; 
+                        echo '<i class="far fa-user"></i>';
+                    	echo '</a>';
+					} 
+					?>
                 </div>
 
             </nav>
