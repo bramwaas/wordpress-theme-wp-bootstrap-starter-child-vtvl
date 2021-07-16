@@ -14,7 +14,7 @@
  * en css daarin (oude classes nog niet verwijderd):
  *  navbar-toggleable-md   => navbar-expand-md 
  *  nieuw aanvulling op navbar-light; bg-light
- * 20210715 aantal dingen overgenomen uit standaard en login poppetje fa
+ * 20210716 aantal dingen overgenomen uit standaard en login poppetje fa
  */
 
 ?><!DOCTYPE html>
@@ -62,20 +62,7 @@
                 <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <?php
-                wp_nav_menu([
-                    'theme_location'    => 'primary',
-                    'container'       => 'div',
-                    'container_id'    => 'main-nav',
-                    'container_class' => 'collapse navbar-collapse justify-content-end',
-                    'menu_id'         => false,
-                    'menu_class'      => 'navbar-nav',
-                    'depth'           => 3,
-                    'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                    'walker'          => new wp_bootstrap_navwalker()
-                ]);
-                ?>
-                <div class="navbar-item"  label="Login logout">
+                <div class="navbar-item  order-md-12"  label="Login logout">
 					<?php
 					global $wp;
 					$redirect_url = add_query_arg( $wp->query_vars, home_url( $wp->request ) );
@@ -90,6 +77,19 @@
 					} 
 					?>
                 </div>
+                <?php
+                wp_nav_menu([
+                    'theme_location'    => 'primary',
+                    'container'       => 'div',
+                    'container_id'    => 'main-nav',
+                    'container_class' => 'collapse navbar-collapse justify-content-end',
+                    'menu_id'         => false,
+                    'menu_class'      => 'navbar-nav',
+                    'depth'           => 3,
+                    'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+                    'walker'          => new wp_bootstrap_navwalker()
+                ]);
+                ?>
 
             </nav>
         </div>
